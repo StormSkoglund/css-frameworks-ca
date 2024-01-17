@@ -1,26 +1,28 @@
 {
-  "name": "css-frameworks-ca",
+  "name": "bootstrap-ca",
   "version": "0.0.1",
-  "description": "A starting point for the CSS Frameworks CA project",
+  "description": "A course assignment in css frameworks. I am building a simple social media page.",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"We will learn more about testing in the Workflow course\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NoroffFEU/css-frameworks-ca.git"
+    "url": "git+https://github.com/StormSkoglund/css-frameworks-ca.git"
   },
   "keywords": [
-    "CSS",
-    "CSS",
-    "Frameworks",
-    "Bootstrap",
-    "SCSS",
-    "SASS"
+    "css",
+    "sass",
+    "social",
+    "media"
   ],
-  "author": "Oliver Dipple <oliver.dipple@noroff.no>",
+  "author": "Alex Storm Skoglund <alesko52196@stud.noroff.no>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NoroffFEU/css-frameworks-ca/issues"
+    "url": "https://github.com/StormSkoglund/css-frameworks-ca/issues"
   },
-  "homepage": "https://github.com/NoroffFEU/css-frameworks-ca#readme"
+  "homepage": "https://github.com/StormSkoglund/css-frameworks-ca#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
 }
