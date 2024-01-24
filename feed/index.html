@@ -12,7 +12,28 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="d-flex rows">
-    <div class="p-5 card h-75 mw-50 bg-primary m-3"></div>
+  <body class="d-flex row">
+    <div class="p-5 card h-75 bg-primary m-3 d-flex row mw-25">
+      <h1 class="">Hi there, Alex Skoglund!</h1>
+      <img
+        src="/images/mememe-min-min.jpg"
+        alt="A profile picture of male with dark-blonde hair"
+        class="col-sm-2 col-md-2 col-lg-2"
+      />
+      <div class="form-group row-lg-3 row-sm-2">
+        <label for="message">What’s on your mind?</label>
+        <textarea class="form-control" id="message" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="messageFile">File input</label>
+        <input
+          type="file"
+          class="btn-outline-secondary bg-success"
+          id="messageFile"
+          aria-describedby="helpText"
+        />
+        <small id="helpText" class="form-text text-muted">Add a file.</small>
+      </div>
+    </div>
   </body>
 </html>
