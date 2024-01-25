@@ -13,7 +13,8 @@
     ></script>
   </head>
   <body class="d-flex row">
-    <div class="p-5 card h-75 bg-primary m-3 d-flex row mw-25">
+    <!-- Upload section -->
+    <div class="p-5 card h-75 bg-primary m-3 d-flex row mw-25 col-4">
       <h1 class="">Hi there, Alex Skoglund!</h1>
       <img
         src="/images/mememe-min-min.jpg"
@@ -25,14 +26,55 @@
         <textarea class="form-control" id="message" rows="3"></textarea>
       </div>
       <div class="form-group">
-        <label for="messageFile">File input</label>
+        <label for="messageFile">Upload file</label>
         <input
           type="file"
-          class="btn-outline-secondary bg-success"
+          class="btn-outline-info bg-warning"
           id="messageFile"
           aria-describedby="helpText"
         />
         <small id="helpText" class="form-text text-muted">Add a file.</small>
+      </div>
+    </div>
+    <!-- Feed section -->
+    <div
+      class="container-fluid d-flex card bg-primary col-lg-5 col-md-4 col-sm-2 p-0 row"
+    >
+      <div class="card p-2 bg-primary">
+        <img
+          src="/images/Male_singer.jpg"
+          alt="A man singin in front of an audience"
+          class="card w-100 p-0"
+        />
+        <!-- Example textbox -->
+        <div class="form-group row-lg-3 row-sm-2">
+          <label for="messageFeed" class="text-white">New Post: </label>
+          <textarea
+            class="form-control px-3"
+            id="messageFeed"
+            rows="5"
+          ></textarea>
+        </div>
+        <div class="form-group"></div>
+        <img
+          src="/images/Image8.jpg"
+          alt="A picture of a man sitting by a table"
+          class="col-2 align-content-start"
+        />
+        <p class="d-flex align-items-start">Luke Ocean</p>
+        <p class="d-flex align-items-start">Bio: Educator, singer.</p>
+        <hr />
+        <h2 class="text-white">Comments</h2>
+        <!-- Example textbox -->
+        <div class="form-group row-lg-3 row-sm-2">
+          <label for="messageFeed" class="text-white">New Post: </label>
+          <textarea
+            class="form-control px-3"
+            id="messageFeed"
+            rows="5"
+          ></textarea>
+        </div>
+        <div class="form-group"></div>
       </div>
     </div>
   </body>
