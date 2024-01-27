@@ -12,56 +12,64 @@
     ></script>
     <title>Musync | Login</title>
   </head>
-  <body class="container-fluid d-flex justify-content-between">
-    <div class="p-5 card h-75 mw-50 bg-primary m-3">
-      <h2 class="display-1 text-center">*musync*</h2>
-      <p class="lead text-center">
-        Musicians' collaboration platform. Find like-minded musicians. Join now.
-      </p>
-      <a class="btn btn-info text-white fw-bold">Create an account</a>
-      <p class="text-center mt-3 text">
-        If you're a musician seeking to expand your network and explore new
-        possibilities, this platform is an ideal resource for you. Join today
-        and discover the many opportunities that await you.
-      </p>
-    </div>
-    <div
-      class="h-75 w-100 p-5 card bg-primary m-3 d-flex container-fluid justify-content-between clearfix"
-    >
-      <h1 class="display-6">Login</h1>
-      <div class="form-group">
-        <label for="medialLogin">Email address</label>
-        <input
-          type="email"
-          class="form-control d-flex align-items-end w-50"
-          id="medialLogin"
-          aria-describedby="emailHelp"
-          placeholder="Enter email"
-        />
+  <body class="vh-100">
+    <div class="container-fluid d-flex justify-content-between vh-100">
+      <div class="p-5 card h-50 mw-50 bg-primary m-3">
+        <h2 class="display-1 text-center">*musync*</h2>
+        <p class="text-center fw-bolder lead">
+          Musicians' collaboration platform. Find like-minded musicians. Join
+          now.
+        </p>
+        <a class="btn btn-info text-white fw-bold">Create an account</a>
+        <p class="text-center mt-3 text">
+          If you're a musician seeking to expand your network and explore new
+          possibilities, this platform is an ideal resource for you. Join today
+          and discover the many opportunities that await you.
+        </p>
       </div>
-      <div class="form-group">
-        <label for="mediaPassword">Password</label>
-        <input
-          type="password"
-          class="form-control d-flex align-items-end w-50"
-          id="mediaPassword"
-          placeholder="Enter password"
-        />
-        <img
-          src="images/MusicAI_1.png"
-          alt="Two male musicians, playing side by side on stage"
-          class="col-sm-4 col-md-5 col-lg-6 float-end"
-        />
-        <a class="btn btn-info mt-1 text-white fw-bold" href="feed/index.html"
-          >ENTER</a
+      <div
+        class="h-75 w-100 p-5 card bg-primary m-3 d-flex container-fluid justify-content-between clearfix"
+      >
+        <h1 class="display-6">Login</h1>
+        <form class="form-group" action="/feed/index.html">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            class="form-control d-flex align-items-end w-50"
+            id="email"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
+        </form>
+        <form class="form-group" action="/feed/index.html">
+          <label for="mediaPassword">Password</label>
+          <input
+            type="password"
+            class="form-control d-flex align-items-end w-50"
+            id="mediaPassword"
+            placeholder="Enter password"
+          />
+          <img
+            src="images/MusicAI_1.png"
+            alt="Two male musicians, playing side by side on stage"
+            class="d-sm-none d-md-none d-lg-block col-lg-6 float-end"
+          />
+          <button class="btn btn-info mt-1 text-white fw-bold" type="submit">
+            ENTER
+          </button>
+        </form>
+        <a
+          href=""
+          class="bg-primary border border-dark text-dark text-center p-3 col-5 fw-bold"
+          >Did you forget your password?</a
         >
       </div>
-      <a
-        href=""
-        class="bg-primary border border-dark text-dark text-center p-3 col-5 fw-bold"
-        >Did you forget your password?</a
-      >
     </div>
-    <footer class="">&copy 2024</footer>
+    <footer
+      class="container-fluid border border-info border-5 text-center p-2 mb-0"
+    >
+      &copy2024
+      <div><h5 class="display-6">*musync*</h5></div>
+    </footer>
   </body>
 </html>
