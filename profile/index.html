@@ -3,8 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <head>
+      <meta charset="UTF-8" />
+      <meta
+        name="description"
+        content="Profile page belonging to a Musync user"
+      />
+      <meta name="keywords" content="Meeting-place, Music, SoMe" />
+      <meta name="author" content="Alex Storm Skoglund" />
+    </head>
+    <title>Musync | Profile</title>
     <link rel="stylesheet" href="/dist/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monofett&display=swap"
+      rel="stylesheet"
+    />
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -12,9 +27,10 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <header class="container-fluid border border-5 border-info">
+  <header class="container-fluid border border-5 border-info p-3">
     <div class="">
-      <a href="index.html" class="">
+      <a href="../index.html" class="">
+        <!-- This is from Bootstrap icons -->
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="56"
@@ -39,127 +55,136 @@
       src="/images/User_main.jpg"
       alt="An image of a male with dark red hair and beard"
       class="rounded-circle float-end col-1"
-    /><!-- This is Bootstrap icons -->
+    />
 
-    <h2 class="display-1">*musync*</h2>
+    <img
+      src="/images/_musync_.png"
+      alt="A logo in bold letters, it spells *musync*"
+      class="col-3"
+    />
 
-    <nav class="navbar navbar-expand-lg bg-light display-6">
+    <nav class="navbar navbar-expand-lg bg-secondary display-6">
       <div class="container-fluid">
         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/feed/index.html">Home</a>
+          </li>
           <li class="nav-item">
             <a
               class="nav-link active"
               aria-current="page"
-              href="/feed/index.html"
-              >Home</a
+              href="profile/index.html"
+              >Profile</a
             >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="profile/index.html">Profile</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <body>
+  <body class="bg-secondary">
     <div
       class="container mt-5 bg-primary justify-content-between align-items-center col-sm-10 col-md-8 col-lg-5 border-rounded clearfix rounded-5 p-3"
     >
-      <h1 class="fw-bolder">Alex Skoglund</h1>
+      <h1 class="fw-bolder">John Doe</h1>
       <h2 class="fw-italic">Drums</h2>
       <img
-        src="/images/mememe-min-min.jpg"
-        alt="A profile picture of a man with dark-blonde hair"
+        src="/images/User_main.jpg"
+        alt="A profile picture of a man with red hair and beard"
         class="rounded-circle img-fluid col-lg-2 col-md-4 col-sm-5 border-info img-thumbnail float-end border-4 border-info"
       />
       <p class="fw-bolder mt-5">Online</p>
       <p class="fw-bolder mt-0">Vestland, Norway</p>
       <hr />
-      <div class="bio-box"></div>
-      <h3 class="fw-bolder">What is your main instrument?</h3>
-      <div class="custom-control custom-radio">
-        <input
-          type="radio"
-          id="intrument1"
-          name="intrument1"
-          class="custom-control-input"
-          checked=""
-        />
-        <label class="custom-control-label" for="intrument1">Vocals</label>
+      <div class="bio-box">
+        <h3 class="fw-stronger">Update Bio:</h3>
       </div>
-      <div class="custom-control custom-radio">
-        <input
-          type="radio"
-          id="intrument2"
-          name="intrument2"
-          class="custom-control-input"
-        />
-        <label class="custom-control-label" for="intrument2">Piano</label>
-      </div>
-      <div class="custom-control custom-radio">
-        <input
-          type="radio"
-          id="intrument3"
-          name="intrument3"
-          class="custom-control-input"
-        />
-        <label class="custom-control-label" for="intrument3">Drums</label>
-      </div>
-      <div class="custom-control custom-radio">
-        <input
-          type="radio"
-          id="intrument4"
-          name="intrument4"
-          class="custom-control-input"
-        />
-        <label class="custom-control-label" for="intrument4"
-          >Acoustic guitar</label
-        >
-      </div>
-      <div class="custom-control custom-radio">
-        <input
-          type="radio"
-          id="intrument5"
-          name="intrument5"
-          class="custom-control-input"
-        />
-        <label class="custom-control-label" for="intrument5"
-          >Electric guitar</label
-        >
-      </div>
-      <div class="custom-control custom-radio">
-        <input
-          type="radio"
-          id="intrument6"
-          name="intrument6"
-          class="custom-control-input"
-        />
-        <label class="custom-control-label" for="intrument6"
-          >Acoustic bass</label
-        >
-      </div>
-      <div class="custom-control custom-radio">
-        <input
-          type="radio"
-          id="intrument7"
-          name="intrument7"
-          class="custom-control-input"
-        />
-        <label class="custom-control-label" for="intrument7"
-          >Electric bass</label
-        >
-      </div>
-      <div class="custom-control custom-radio">
-        <input
-          type="radio"
-          id="intrument2"
-          name="intrument2"
-          class="custom-control-input"
-        />
-        <label class="custom-control-label" for="intrument2">Piano</label>
-      </div>
+      <form method="post">
+        <h4 class="fw-bolder">What is your main instrument?</h4>
+        <div class="custom-control custom-radio">
+          <input
+            type="radio"
+            id="intrument1"
+            name="intrument1"
+            class="custom-control-input"
+            checked=""
+          />
+          <label class="custom-control-label" for="intrument1">Vocals</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input
+            type="radio"
+            id="intrument2"
+            name="intrument2"
+            class="custom-control-input"
+          />
+          <label class="custom-control-label" for="intrument2">Piano</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input
+            type="radio"
+            id="intrument3"
+            name="intrument3"
+            class="custom-control-input"
+          />
+          <label class="custom-control-label" for="intrument3">Drums</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input
+            type="radio"
+            id="intrument4"
+            name="intrument4"
+            class="custom-control-input"
+          />
+          <label class="custom-control-label" for="intrument4"
+            >Acoustic guitar</label
+          >
+        </div>
+        <div class="custom-control custom-radio">
+          <input
+            type="radio"
+            id="intrument5"
+            name="intrument5"
+            class="custom-control-input"
+          />
+          <label class="custom-control-label" for="intrument5"
+            >Electric guitar</label
+          >
+        </div>
+        <div class="custom-control custom-radio">
+          <input
+            type="radio"
+            id="intrument6"
+            name="intrument6"
+            class="custom-control-input"
+          />
+          <label class="custom-control-label" for="intrument6"
+            >Acoustic bass</label
+          >
+        </div>
+        <div class="custom-control custom-radio">
+          <input
+            type="radio"
+            id="intrument7"
+            name="intrument7"
+            class="custom-control-input"
+          />
+          <label class="custom-control-label" for="intrument7"
+            >Electric bass</label
+          >
+        </div>
+        <div class="custom-control custom-radio">
+          <input
+            type="radio"
+            id="intrument8"
+            name="intrument8"
+            class="custom-control-input"
+          />
+          <label class="custom-control-label" for="intrument8">Other</label>
+        </div>
+        <button class="btn btn-dark">Save</button>
+      </form>
     </div>
-    <footer class="text-center border-info">
+    <footer class="text-center border border-5 border-info">
       &copy2024
       <div><h5 class="display-6">*musync*</h5></div>
     </footer>
