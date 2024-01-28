@@ -24,8 +24,12 @@
     <title>Musync | Login</title>
   </head>
   <body class="vh-100 bg-secondary">
-    <div class="container-fluid d-flex justify-content-between vh-100">
-      <div class="p-5 card h-50 mw-50 bg-primary m-3 box-shadow my-border">
+    <div
+      class="container d-flex flex-column flex-lg-row justify-content-between"
+    >
+      <div
+        class="p-5 card h-75 h-l-50 mw-50 bg-primary m-3 box-shadow my-border"
+      >
         <img
           src="images/_musync_.png"
           class="m-auto col-6"
@@ -46,14 +50,14 @@
       </div>
       <!-- login -->
       <div
-        class="h-75 w-100 p-5 card bg-primary m-3 d-flex container-fluid justify-content-between clearfix box-shadow my-border"
+        class="h-auto w-100 p-5 card bg-primary m-3 d-flex container-fluid justify-content-between clearfix box-shadow my-border"
       >
         <h1 class="display-6">Login</h1>
         <form class="form-group" action="/profile/index.html">
           <label for="email">Email address</label>
           <input
             type="email"
-            class="my-form d-flex align-items-end w-50"
+            class="my-form d-flex align-items-end form-control"
             id="email"
             pattern="[^@\s]+@[^@\s]+"
             title="Invalid email address"
@@ -62,7 +66,7 @@
           <label for="mediaPassword">Password</label>
           <input
             type="password"
-            class="my-form d-flex align-items-end w-50"
+            class="my-form d-flex align-items-end form-control"
             id="mediaPassword"
             placeholder="Enter password"
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
@@ -70,9 +74,9 @@
             required
           />
           <img
-            src="images/MusicAI_1.png"
+            src="images/MusicAI_1-min.png"
             alt="Two male musicians, playing side by side on stage"
-            class="d-sm-none d-md-none d-lg-block col-lg-5 float-end"
+            class="d-none d-lg-block col-lg-6 float-end"
           />
           <button
             class="btn btn-info mt-1 text-white fw-bold float-end"
@@ -84,8 +88,8 @@
         <div>
           <a
             href=""
-            class="bg-primary border border-dark text-dark text-center p-3 col-4 fw-bold"
-            >Did you forget your password?</a
+            class="bg-primary btn border-dark text-dark text-center fw-bold"
+            >Forget your password?</a
           >
         </div>
       </div>

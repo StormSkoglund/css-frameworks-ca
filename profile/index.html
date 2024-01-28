@@ -87,8 +87,9 @@
     </nav>
   </header>
   <body class="bg-secondary">
+    <!-- main profile-container -->
     <div
-      class="container mt-5 100vh bg-primary justify-content-between align-items-center col-sm-10 col-md-8 col-lg-5 border-rounded clearfix rounded-5 p-3"
+      class="container mt-5 mb-5 100vh bg-primary justify-content-between align-items-center col-sm-10 col-md-8 col-lg-5 border-rounded clearfix rounded-5 p-3 box-shadow"
     >
       <h1 class="fw-bolder">John Doe</h1>
       <h2 class="fw-italic">Drums</h2>
@@ -100,30 +101,36 @@
       <p class="fw-bolder mt-5">Online</p>
       <p class="fw-bolder mt-0">Vestland, Norway</p>
       <div class="d-inline-flex">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="35"
-          height="35"
-          fill="currentColor"
-          class="bi bi-person-add"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"
-          />
-          <path
-            d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"
-          />
-        </svg>
-        <p class="fw-bold">Follow John Doe</p>
+        <button type="button" class="btn p-2 btn-info">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-person-add"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"
+            />
+            <path
+              d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"
+            />
+          </svg>
+          <p class="fw-bold">Follow</p>
+        </button>
       </div>
-      <select class="custom-select">
-        <option selected="">List of posts</option>
-        <option value="1">Recent post</option>
-        <option value="2">Archived posts</option>
-      </select>
-      <hr />
-      <div class="bio-box">
+      <div>
+        <hr />
+        <p class="lead fw-bold">Posts by this user</p>
+        <select class="border-2 border-info">
+          <option selected="">List of posts</option>
+          <option value="1">Recent post</option>
+          <option value="2">Archived posts</option>
+        </select>
+        <hr />
+      </div>
+      <div class="mw-25">
         <h3 class="fw-stronger">Update Bio:</h3>
         <textarea class="my-form" id="message" rows="3"></textarea>
       </div>
@@ -210,7 +217,7 @@
           />
           <label class="custom-control-label" for="intrument8">Other</label>
         </div>
-        <button class="btn btn-dark">Save</button>
+        <button class="btn btn-info float-end">Save</button>
       </form>
     </div>
     <footer class="text-center border border-5 border-info">

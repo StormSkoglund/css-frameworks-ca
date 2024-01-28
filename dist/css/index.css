@@ -11866,7 +11866,7 @@ textarea.form-control-lg {
 .my-form {
   padding: 1.5rem;
   border: solid;
-  border-width: 5px;
+  border-width: 3px;
   border-color: #3590d2;
   border-radius: 5px;
 }
@@ -11874,7 +11874,7 @@ textarea.form-control-lg {
 .my-form-min {
   padding: 0.5rem;
   border: solid;
-  border-width: 5px;
+  border-width: 3px;
   border-color: #3590d2;
   border-radius: 5px;
 }
